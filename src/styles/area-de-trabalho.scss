@@ -1,0 +1,16 @@
+.area {
+    width: 21.875rem;
+    height: 50em;
+    background-color: #D9BDAD;
+    border-radius: 44px;
+    overflow-y: auto;
+    scroll-behavior: auto;
+    overflow-x: hidden;
+}
+
+
+@media(min-width: 768px){
+    .area {
+        min-width: 800px;
+    }
+}
