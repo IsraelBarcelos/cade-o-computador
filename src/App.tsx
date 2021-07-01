@@ -8,6 +8,7 @@ function App() {
       <Route path="/" exact component={Login}></Route>
       <Route path="/andares" exact component={Andares}></Route>
       <Route path="/andar" exact component={Andar}></Route>
+      
     </BrowserRouter>
   );
 }
