@@ -4,7 +4,7 @@ import "../styles/andares.scss"
 
 export function Andares() {
 
-  const andares = ['1º andar','2º andar','3º andar','4º andar','5º andar','6º andar','7º andar','8º andar','9º andar','10º andar',]
+  const andares = [1,2,3,4,5,6,7,8,9,10]
 
   /*
       Página de Andares
@@ -16,13 +16,15 @@ export function Andares() {
 
   return (
     <div className="container">
-      <main className="content">
+      <div className="content">
         {
           andares.map((andar, index) => {
-            return <PressButton key={index} text={andar} />
+            return <PressButton key={index} text={`${andar}° andar`} />
           })
         }
-      </main>
+      </div>
+      <div className="calendario"> 1231232</div>
+
     </div>
   );
 }
