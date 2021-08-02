@@ -1,7 +1,11 @@
 
+import computadores from "../../assets/images/computers.svg"
+
+import "./styles.scss"
+
+
 export function Login() {
 
-  
   return (
 
     /* 
@@ -14,10 +18,17 @@ export function Login() {
       -Receber redirecionamentos de usuários não logados.
     */
 
-    <div>
-      {
-        
-      }
+    <div className="login-page">
+      
+      <header>
+        <img src={computadores} alt="Computadores" />
+      </header>
+
+      <div className="login-bar">
+
+      </div>
+
+    
       
     </div>
   )

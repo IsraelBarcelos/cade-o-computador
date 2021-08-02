@@ -1,6 +1,6 @@
-import { PressButton } from "../components/PressButton"
+import { PressButton } from "../../components/PressButton"
 
-import "../styles/andares.scss"
+import "./styles.scss"
 
 export function Andares() {
 
@@ -15,7 +15,25 @@ export function Andares() {
   */
 
   return (
-    <div className="container">
+    <div className='some-page-wrapper'>
+      <div className='row'>
+        <div className='column'>
+          <div className='blue-column'>
+            Some Text in Column One
+          </div>
+        </div>
+        <div className='column'>
+          <div className='green-column'>
+            Some Text in Column Two
+          </div>
+        </div>
+      </div>
+    </div>    
+  );
+}
+
+
+{/*<div className="container">
       <div className="content">
         {
           andares.map((andar, index) => {
@@ -25,6 +43,4 @@ export function Andares() {
       </div>
       <div className="calendario"> 1231232</div>
 
-    </div>
-  );
-}
+      </div>*/}

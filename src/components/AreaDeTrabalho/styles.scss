@@ -1,12 +1,14 @@
 .area {
-    width: 21.875rem;
-    height: 50rem;
-    border-radius: 2.75rem;
-    overflow-y: auto;
-    scroll-behavior: auto;
-    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 95vw;
+
+
 
     background-color: #D9BDAD;
+    border-radius: 0.75rem;
 }
 
 

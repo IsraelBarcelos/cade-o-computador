@@ -1,4 +1,4 @@
-import "../styles/area-de-trabalho.scss"
+import "./styles.scss"
 
 type AreaDeTrabalhoPropsType = {
     children: React.ReactNode
