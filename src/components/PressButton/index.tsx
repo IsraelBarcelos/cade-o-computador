@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes  } from 'react'
 
-import "../styles/press-button.scss"
+import "./styles.scss"
 
 interface PressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     text: string;
