@@ -8,7 +8,7 @@ type BotaoBegeProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 
 export function BotaoBege(props : BotaoBegeProps) {
   return (
-    <button className="botao-bege" {...props}>
+    <button type="button" className="botao-bege" {...props}>
       {props.children}
     </button>
   )

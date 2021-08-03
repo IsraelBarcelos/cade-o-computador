@@ -38,7 +38,7 @@ export function Login() {
     <div className="login-page">
 
       <header className="title-login">
-        Faça o seu login
+        <span>Faça o seu login</span>
       </header>
 
       <form onSubmit={handleForm}>
