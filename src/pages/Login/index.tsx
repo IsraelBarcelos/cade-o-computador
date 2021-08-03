@@ -15,7 +15,11 @@ export function Login() {
 
   function handleForm(event: FormEvent) {
     event.preventDefault()
-
+    const dataSent = {
+      email,
+      password
+    }
+    console.log(dataSent)
     return;
   }
 
@@ -53,7 +57,7 @@ export function Login() {
 
         <div className="login-buttons">
           <div className="linha1">
-          <BotaoBege>
+          <BotaoBege type="submit">
               <span>Entrar</span>
             </BotaoBege>
           </div>
