@@ -1,4 +1,4 @@
-import { FormEvent } from "react"
+import { FormEvent, useState } from "react"
 
 import { BotaoBege } from "../../components/BotaoBege"
 
@@ -9,6 +9,9 @@ import "./styles.scss"
 
 
 export function Login() {
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
   function handleForm(event: FormEvent) {
     event.preventDefault()
@@ -39,19 +42,19 @@ export function Login() {
 
           <div className="login-field">
             <label htmlFor="email">E-mail</label>
-            <input className="input-field" type="text" />
+            <input className="input-field" type="text" value={email} onChange={event => setEmail(event.target.value)} />
           </div>
 
           <div className="login-field">
             <label htmlFor="senha">Senha</label>
-            <input className="input-field" type="password" />
+            <input className="input-field" type="password" value={password} onChange={event => setPassword(event.target.value)} />
           </div>
         </div>
 
         <div className="login-buttons">
           <div className="linha1">
           <BotaoBege>
-              Entrar
+              <span>Entrar</span>
             </BotaoBege>
           </div>
 
