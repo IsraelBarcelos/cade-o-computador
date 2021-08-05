@@ -1,10 +1,12 @@
+import { Aside } from "../../components/Aside";
+import { OrangeBox } from "../../components/OrangeBox";
 import { PressButton } from "../../components/PressButton"
 
 import "./styles.scss"
 
 export function Andares() {
 
-  const andares = [1,2,3,4,5,6,7,8,9,10]
+  const andares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
   /*
       Página de Andares
@@ -15,32 +17,25 @@ export function Andares() {
   */
 
   return (
-    <div className='some-page-wrapper'>
-      <div className='row'>
-        <div className='column'>
-          <div className='blue-column'>
-            Some Text in Column One
-          </div>
+    <div className="andares-cointainer">
+      <Aside>
+        <div className="buttons">
+          {
+            andares.map(andar => {
+              return <PressButton text={`${andar}º andar`} />
+            })
+
+          }
         </div>
-        <div className='column'>
-          <div className='green-column'>
-            Some Text in Column Two
-          </div>
-        </div>
-      </div>
-    </div>    
+
+
+      </Aside>
+      <OrangeBox>
+        <header className="title-andares">
+          <span>O que tem para hoje?</span>
+        </header>
+      </OrangeBox>
+
+    </div>
   );
 }
-
-
-{/*<div className="container">
-      <div className="content">
-        {
-          andares.map((andar, index) => {
-            return <PressButton key={index} text={`${andar}° andar`} />
-          })
-        }
-      </div>
-      <div className="calendario"> 1231232</div>
-
-      </div>*/}
