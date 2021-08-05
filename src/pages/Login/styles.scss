@@ -51,9 +51,14 @@
 
       .linha2 {
         margin-top: 1rem;
+        display: flex;
         .botao-bege {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 9rem;
           img {
+            margin-right: .5rem;
             width: 2rem;
             height: 2rem;
           }
@@ -108,11 +113,7 @@
 
         .linha2 {
           margin-top: 2.938rem;
-          display: flex;
           .botao-bege {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             width: 24.25rem;
             height:  6.313rem;
             font-size: 3.438rem;
