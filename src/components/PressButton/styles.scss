@@ -1,4 +1,4 @@
-button {
+.press-button {
     width: 15rem;
     height: 4rem;
     font-size: 2rem;
@@ -18,7 +18,7 @@ button {
     background-color: #D94625;
     text-align: center;
 
-    + button {
+    .press-button {
         margin-top: 2rem;
     }
     

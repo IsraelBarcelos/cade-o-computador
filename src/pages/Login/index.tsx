@@ -9,7 +9,7 @@ import { Aside } from "../../components/Aside"
 
 import computadores from "../../assets/images/computers.svg"
 import { OrangeBox } from "../../components/OrangeBox"
-
+import { Footer } from "../../components/Footer"
 
 export function Login() {
 
@@ -86,6 +86,12 @@ export function Login() {
             </div>
 
           </form>
+          <hr className="hr" />
+          <Footer >
+            <div className="footer-container">
+              123
+            </div>
+          </Footer>
         </div>
       </OrangeBox>
     </div>
