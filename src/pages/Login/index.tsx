@@ -38,10 +38,10 @@ export function Login() {
       -Receber redirecionamentos de usuários não logados.
     */
 
-      
 
-   
-    <div className="containerLoginPage">
+
+
+    <div className="container-login-page">
       <Aside>
         <img src={computadores} alt="Computaores" />
       </Aside>
@@ -52,7 +52,7 @@ export function Login() {
             <span>Faça o seu login</span>
           </header>
 
-          <form onSubmit={handleForm}>
+          <form className="login-form" onSubmit={handleForm}>
             <div className="login-fields">
 
               <div className="login-field">
@@ -68,13 +68,13 @@ export function Login() {
 
             <div className="login-buttons">
               <div className="linha1">
-              <BotaoBege type="submit">
+                <BotaoBege type="submit">
                   <span>Entrar</span>
                 </BotaoBege>
               </div>
 
               <div className="linha2">
-                
+
 
                 <BotaoBege>
                   <img src={googleLogo} alt="Google" /> <span>Google</span>
@@ -88,8 +88,8 @@ export function Login() {
           </form>
         </div>
       </OrangeBox>
-      </div>
-      
+    </div>
+
 
   )
 }

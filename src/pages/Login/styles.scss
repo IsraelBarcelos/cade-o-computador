@@ -1,80 +1,77 @@
-.containerLoginPage {
-  display: flex;
-}
-
-.main-content {
-  .aside {
-    display: none;
-  }
-}
-
-.login-page {
+.container-login-page {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  .title-login {
-    margin: 1rem 0;
-    span {
-      font-size: 2rem;
-    }
-  }
-
-  form {
-    .login-fields {
-      margin-bottom: 1rem;
-
-      .login-field {
-        margin-bottom: 1rem;
-
-        label {
-          color: #d9bdad;
-          margin-right: 0.5rem;
-          font-size: 1.5rem;
-          text-shadow: 0px 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
-        }
-
-        .input-field {
-          border: none !important;
-          border-radius: 1rem;
-          height: 2rem;
-          width: 15rem;
-          text-align: center;
-
-          &:focus {
-            outline: 0;
-          }
-        }
-      }
-    }
-
-    .login-buttons {
+  .orange-box {
+    .login-page {
       display: flex;
-      justify-content: center;
       flex-direction: column;
+      align-items: center;
 
-      .linha1 {
-        .botao-bege {
-          width: 10rem;
+      .title-login {
+        margin: 1rem 0;
+        span {
+          font-size: 2rem;
         }
       }
 
-      .linha2 {
-        margin-top: 1rem;
-        display: flex;
-        .botao-bege {
+      .login-form {
+        .login-fields {
+          margin-bottom: 1rem;
+
+          .login-field {
+            margin-bottom: 1rem;
+
+            label {
+              color: #d9bdad;
+              margin-right: 0.5rem;
+              font-size: 1.5rem;
+              text-shadow: 0px 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+            }
+
+            .input-field {
+              border: none !important;
+              border-radius: 1rem;
+              height: 2rem;
+              width: 15rem;
+              text-align: center;
+
+              &:focus {
+                outline: 0;
+              }
+            }
+          }
+        }
+
+        .login-buttons {
           display: flex;
-          align-items: center;
           justify-content: center;
-          width: 9rem;
-          img {
-            margin-right: .5rem;
-            width: 2rem;
-            height: 2rem;
+          flex-direction: column;
+
+          .linha1 {
+            .botao-bege {
+              width: 10rem;
+            }
           }
 
-          &:first-child {
-            margin-right: 1rem;
+          .linha2 {
+            margin-top: 1rem;
+            display: flex;
+            .botao-bege {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 9rem;
+              img {
+                margin-right: 0.5rem;
+                width: 2rem;
+                height: 2rem;
+              }
+
+              &:first-child {
+                margin-right: 1rem;
+              }
+            }
           }
         }
       }
@@ -83,66 +80,70 @@
 }
 
 @media (min-width: 768px) {
-  .login-page {
-    .title-login {
-      margin-bottom: 4.75rem;
-      span {
-        font-size: 3.438rem;
-      }
-    }
-
-    form {
-      .login-fields {
-        .login-field {
-          display: flex;
-
-          label {
-            font-size: 3.438rem;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          }
-
-          .input-field {
-            width: 40rem;
-            margin-left: 1.8rem;
-            height: 3.875rem;
-            font-size: 2.5rem;
-            
-          }
-        }
-      }
-
-      .login-buttons {
-        margin-top: 5.313rem;
-        .linha1 {
-          .botao-bege {
-            width: 24.25rem;
-            height: 6.313rem;
+  .container-login-page {
+    flex-direction: row;
+    .orange-box {
+      .login-page {
+        .title-login {
+          margin-bottom: 4.75rem;
+          span {
             font-size: 3.438rem;
           }
         }
 
-        .linha2 {
-          margin-top: 2.938rem;
-          .botao-bege {
-            width: 24.25rem;
-            height:  6.313rem;
-            font-size: 3.438rem;
+        .login-form{
+          .login-fields {
+            .login-field {
+              display: flex;
 
-            img {
-              margin-right: 2rem;
-              width: 4rem;
-              height: 4rem;
-            }
+              label {
+                font-size: 3.438rem;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+              }
 
-            &:first-child {
-              margin-right: 3rem;
+              .input-field {
+                width: 40rem;
+                margin-left: 1.8rem;
+                height: 3.875rem;
+                font-size: 2.5rem;
+              }
             }
           }
+
+          .login-buttons {
+            margin-top: 5.313rem;
+            .linha1 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .botao-bege {
+                width: 24.25rem;
+                height: 6.313rem;
+                font-size: 3.438rem;
+              }
+            }
+
+            .linha2 {
+              margin-top: 2.938rem;
+              .botao-bege {
+                width: 24.25rem;
+                height: 6.313rem;
+                font-size: 3.438rem;
+
+                img {
+                  margin-right: 2rem;
+                  width: 4rem;
+                  height: 4rem;
+                }
+
+                &:first-child {
+                  margin-right: 3rem;
+                }
+              }
+            }
+          }
         }
-
       }
-
     }
-
   }
 }
