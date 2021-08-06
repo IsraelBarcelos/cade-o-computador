@@ -1,3 +1,13 @@
+.containerLoginPage {
+  display: flex;
+}
+
+.main-content {
+  .aside {
+    display: none;
+  }
+}
+
 .login-page {
   display: flex;
   flex-direction: column;

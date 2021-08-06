@@ -5,7 +5,10 @@ import { BotaoBege } from "../../components/BotaoBege"
 import githubLogo from "../../assets/images/githubLogo.svg"
 import googleLogo from '../../assets/images/googleLogo.svg'
 import "./styles.scss"
+import { Aside } from "../../components/Aside"
 
+import computadores from "../../assets/images/computers.svg"
+import { OrangeBox } from "../../components/OrangeBox"
 
 
 export function Login() {
@@ -35,46 +38,58 @@ export function Login() {
       -Receber redirecionamentos de usuários não logados.
     */
 
-    <div className="login-page">
+      
 
-      <header className="title-login">
-        <span>Faça o seu login</span>
-      </header>
+   
+    <div className="containerLoginPage">
+      <Aside>
+        <img src={computadores} alt="Computaores" />
+      </Aside>
 
-      <form onSubmit={handleForm}>
-        <div className="login-fields">
+      <OrangeBox>
+        <div className="login-page">
+          <header className="title-login">
+            <span>Faça o seu login</span>
+          </header>
 
-          <div className="login-field">
-            <label htmlFor="email">E-mail</label>
-            <input className="input-field" type="text" value={email} onChange={event => setEmail(event.target.value)} />
-          </div>
+          <form onSubmit={handleForm}>
+            <div className="login-fields">
 
-          <div className="login-field">
-            <label htmlFor="senha">Senha</label>
-            <input className="input-field" type="password" value={password} onChange={event => setPassword(event.target.value)} />
-          </div>
+              <div className="login-field">
+                <label htmlFor="email">E-mail</label>
+                <input className="input-field" type="text" value={email} onChange={event => setEmail(event.target.value)} />
+              </div>
+
+              <div className="login-field">
+                <label htmlFor="senha">Senha</label>
+                <input className="input-field" type="password" value={password} onChange={event => setPassword(event.target.value)} />
+              </div>
+            </div>
+
+            <div className="login-buttons">
+              <div className="linha1">
+              <BotaoBege type="submit">
+                  <span>Entrar</span>
+                </BotaoBege>
+              </div>
+
+              <div className="linha2">
+                
+
+                <BotaoBege>
+                  <img src={googleLogo} alt="Google" /> <span>Google</span>
+                </BotaoBege>
+                <BotaoBege>
+                  <img src={githubLogo} alt="GitHub" /> <span>GitHub</span>
+                </BotaoBege>
+              </div>
+            </div>
+
+          </form>
         </div>
+      </OrangeBox>
+      </div>
+      
 
-        <div className="login-buttons">
-          <div className="linha1">
-          <BotaoBege type="submit">
-              <span>Entrar</span>
-            </BotaoBege>
-          </div>
-
-          <div className="linha2">
-            
-
-            <BotaoBege>
-              <img src={googleLogo} alt="Google" /> <span>Google</span>
-            </BotaoBege>
-            <BotaoBege>
-              <img src={githubLogo} alt="GitHub" /> <span>GitHub</span>
-            </BotaoBege>
-          </div>
-        </div>
-
-      </form>
-    </div>
   )
 }

@@ -5,7 +5,7 @@ type AsideProps = {
 
 export function Aside({children} : AsideProps) {
     return (
-        <aside>
+        <aside className="aside" id="aside">
             {children}
         </aside>
     )
