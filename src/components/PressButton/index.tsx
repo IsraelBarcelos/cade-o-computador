@@ -8,7 +8,7 @@ interface PressButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function PressButton({text, ...rest}: PressButtonProps) {
     return(
-        <button className="pressButton" {...rest}>
+        <button className="press-button" {...rest}>
         {text}
         </button>
     )

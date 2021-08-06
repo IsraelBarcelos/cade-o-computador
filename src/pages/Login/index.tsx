@@ -1,15 +1,14 @@
 import { FormEvent, useState } from "react"
 
 import { BotaoBege } from "../../components/BotaoBege"
+import { Aside } from "../../components/Aside"
+import { OrangeBox } from "../../components/OrangeBox"
+import { Footer } from "../../components/Footer"
 
 import githubLogo from "../../assets/images/githubLogo.svg"
 import googleLogo from '../../assets/images/googleLogo.svg'
-import "./styles.scss"
-import { Aside } from "../../components/Aside"
-
 import computadores from "../../assets/images/computers.svg"
-import { OrangeBox } from "../../components/OrangeBox"
-import { Footer } from "../../components/Footer"
+import "./styles.scss"
 
 export function Login() {
 
@@ -37,9 +36,6 @@ export function Login() {
       -Storage dos dados a partir dessa pagina;
       -Receber redirecionamentos de usuários não logados.
     */
-
-
-
 
     <div className="container-login-page">
       <Aside>
@@ -95,7 +91,5 @@ export function Login() {
         </div>
       </OrangeBox>
     </div>
-
-
   )
 }

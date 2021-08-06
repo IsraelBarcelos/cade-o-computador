@@ -1,19 +1,46 @@
-.area {
-  .main-content {
-    .aside {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.andares-container {
+  .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      .pressButton {
+    .buttons {
+      .press-button {
+        + .press-button {
+          margin-top: 0.8rem;
+        }
+
         &:last-child {
           margin-bottom: 2rem;
         }
       }
     }
+  }
 
-    .orange-box {
-      margin-bottom: 2rem;
+  .orange-box {
+    .andares-page {
+      .title-andares {
+        .span-titulo {
+          font-size: 2rem;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+
+      .calendario {
+        .informacoes-dias {
+          .div-tabela {
+            .cabecalho-tabela {
+              .linha-cabecalho-tabela {
+                .linha-cabecalho {
+                  color: white;
+                  font-size: 1.5rem;
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

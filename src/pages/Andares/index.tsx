@@ -1,4 +1,5 @@
 import { Aside } from "../../components/Aside";
+import { Footer } from "../../components/Footer";
 import { OrangeBox } from "../../components/OrangeBox";
 import { PressButton } from "../../components/PressButton"
 
@@ -17,22 +18,59 @@ export function Andares() {
   */
 
   return (
-    <div className="andares-cointainer">
-
+    <div className="andares-container">
       <Aside>
         <div className="buttons">
           {
-            andares.map(andar => {
-              return <PressButton text={`${andar}º andar`} />
+            andares.map((andar, index) => {
+              return <PressButton key={index} text={`${andar}º andar`} />
             })
           }
         </div>
       </Aside>
-      
+
       <OrangeBox>
-        <header className="title-andares">
-          <span>O que tem para hoje?</span>
-        </header>
+        <div className="andares-page">
+          <header className="title-andares">
+            <span className="span-titulo">O que tem para hoje?</span>
+          </header>
+
+
+          <div className="calendario">
+            <div className="informacoes-dias">
+
+              <div className="info-dia">
+                <table className="div-tabela">
+                  <thead className="cabecalho-tabela">
+                    <tr className="linha-cabecalho-tabela">
+                      <th className="linha-cabecalho">
+                        Segunda-feira
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="linha-tabela">
+                      <td>Info1</td>
+                    </tr>
+                    <tr>
+                      <td>Info2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="tabela-dias">
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <hr />
+        <Footer>
+          Aqui um texto footer
+        </Footer>
       </OrangeBox>
 
     </div>

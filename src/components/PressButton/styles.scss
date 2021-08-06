@@ -15,13 +15,8 @@
     
     border: none;
     color: #D9BDAD;
-    background-color: #D94625;
+    background-color: #D94625 !important;
     text-align: center;
-
-    .press-button {
-        margin-top: 2rem;
-    }
-    
 }
 
 @media( min-width: 768px) {
