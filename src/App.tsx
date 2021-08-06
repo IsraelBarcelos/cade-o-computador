@@ -11,6 +11,7 @@ function App() {
     <BrowserRouter>
       <AreaDeTrabalho>
         <Titulo />
+        <hr className="hr" />
         <main className="main-content">
           <Route path="/" exact component={Login}></Route>
           <Route path="/andares" exact component={Andares}></Route>

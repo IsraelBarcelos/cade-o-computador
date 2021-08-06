@@ -1,9 +1,19 @@
 .area {
   .main-content {
-    .andares-cotainer {
-      .aside {
-        display: block;
+    .aside {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .pressButton {
+        &:last-child {
+          margin-bottom: 2rem;
+        }
       }
+    }
+
+    .orange-box {
+      margin-bottom: 2rem;
     }
   }
 }

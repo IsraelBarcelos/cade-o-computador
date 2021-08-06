@@ -18,18 +18,17 @@ export function Andares() {
 
   return (
     <div className="andares-cointainer">
+
       <Aside>
         <div className="buttons">
           {
             andares.map(andar => {
               return <PressButton text={`${andar}º andar`} />
             })
-
           }
         </div>
-
-
       </Aside>
+      
       <OrangeBox>
         <header className="title-andares">
           <span>O que tem para hoje?</span>
